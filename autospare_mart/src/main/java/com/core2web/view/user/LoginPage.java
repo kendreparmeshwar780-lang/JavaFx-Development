@@ -108,6 +108,11 @@ public class LoginPage extends Application {
         signButton.setStyle(
                 "-fx-background-color: #f9260a;-fx-background-radius: 10px;-fx-padding :10px 30px;-fx-border-radius: 5px;-fx-alignment: center;");
         
+                signButton.setOnAction(event->{
+                    VehicleType vehicleType = new VehicleType();
+                    Scene vehicleTypeScene = vehicleType.getVehicleTypeScene();
+                    loginPageStage.setScene(vehicleTypeScene);
+                });
         Button backButton = new Button("Back");
         backButton.setStyle(
                 "-fx-background-color: #f9260a;-fx-background-radius: 10px;-fx-padding :10px 30px;-fx-border-radius: 5px;-fx-alignment: center;");
