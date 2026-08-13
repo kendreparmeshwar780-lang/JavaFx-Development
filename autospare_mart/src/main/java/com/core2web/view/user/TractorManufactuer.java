@@ -1,4 +1,4 @@
-package com.core2web.view;
+package com.core2web.view.user;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
