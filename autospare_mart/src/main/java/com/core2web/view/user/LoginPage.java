@@ -70,10 +70,11 @@ public class LoginPage extends Application {
 
         
 
-        Scene scene = new Scene(vbox1, 900, 800);
+        Scene scene = new Scene(vbox1,loginPageStage.getWidth(),loginPageStage.getHeight());
         loginPageScene = scene;
         loginPageStage.setTitle("AutoSpare Mart");
         loginPageStage.setScene(loginPageScene);
+        loginPageStage.setMaximized(true);
         loginPageStage.show();
 
     }
@@ -110,7 +111,14 @@ public class LoginPage extends Application {
         
                 signButton.setOnAction(event->{
                     VehicleType vehicleType = new VehicleType();
-                    Scene vehicleTypeScene = vehicleType.getVehicleTypeScene();
+
+                    Runnable callBackAction = new Runnable(){
+                        public void run(){
+                            back();
+                        }
+                    };
+                    Scene vehicleTypeScene = vehicleType.getVehicleTypeScene(callBackAction);
+                    
                     loginPageStage.setScene(vehicleTypeScene);
                 });
         Button backButton = new Button("Back");
@@ -118,7 +126,7 @@ public class LoginPage extends Application {
                 "-fx-background-color: #f9260a;-fx-background-radius: 10px;-fx-padding :10px 30px;-fx-border-radius: 5px;-fx-alignment: center;");
        
         backButton.setOnAction(event->{
-            loginPageStage.setScene(loginPageScene);
+            back();
 
 
         });
@@ -129,9 +137,10 @@ public class LoginPage extends Application {
         VBox vbox4 = new VBox(10, text4, passwordField1);
         VBox vbox5 = new VBox(10, vbox1, vbox2, vbox3, vbox4, signButton,backButton);
 
-        loginPageScene = new Scene(vbox5, 900, 800);
+        loginPageScene = new Scene(vbox5,loginPageStage.getWidth(),loginPageStage.getHeight());
 
         loginPageStage.setScene(loginPageScene);
+        loginPageStage.setMaximized(true);
 
     }
 
@@ -158,16 +167,37 @@ public class LoginPage extends Application {
         Button signButton = new Button("SIGN IN");
         signButton.setStyle(
                 "-fx-background-color: #f9260a;-fx-background-radius: 10px;-fx-padding :10px 30px;-fx-border-radius: 5px;-fx-alignment: center;");
+        
+                signButton.setOnAction(event->{
+                    CompanyLogin company = new CompanyLogin();
 
+                    Runnable callBackAction = new Runnable(){
+                        public void run(){
+                            back();
+                        }
+                    };
+
+                    loginPageStage.setScene(company.getCompanyLogin(callBackAction));
+
+                });
+
+        Button backButton = new Button("Back");
+        backButton.setStyle(
+                "-fx-background-color: #f9260a;-fx-background-radius: 10px;-fx-padding :10px 30px;-fx-border-radius: 5px;-fx-alignment: center;");
+       
+            backButton.setOnAction(event->{
+                back();
+            });
         VBox vbox1 = new VBox(5, text1, textField1);
         VBox vbox2 = new VBox(5, text2, textField2);
 
         VBox vbox3 = new VBox(10, text3, passwordField1);
-        VBox vbox4 = new VBox(10, vbox1, vbox2, vbox3, signButton);
+        VBox vbox4 = new VBox(10, vbox1, vbox2, vbox3, signButton,backButton);
 
-        loginPageScene = new Scene(vbox4, 900, 800);
+        loginPageScene = new Scene(vbox4,loginPageStage.getWidth(),loginPageStage.getHeight());
 
         loginPageStage.setScene(loginPageScene);
+        loginPageStage.setMaximized(true);
 
     }
 
@@ -200,9 +230,12 @@ public class LoginPage extends Application {
         VBox vbox3 = new VBox(10, text3, passwordField1);
         VBox vbox4 = new VBox(10, vbox1, vbox2, vbox3, signButton);
 
-        loginPageScene = new Scene(vbox4, 900, 800);
+        loginPageScene = new Scene(vbox4,loginPageStage.getWidth(),loginPageStage.getHeight());
 
         loginPageStage.setScene(loginPageScene);
+        loginPageStage.setMaximized(true);
     }
-
+    public void back(){
+        loginPageStage.setScene(loginPageScene);
+    }
 }

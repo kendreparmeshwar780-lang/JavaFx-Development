@@ -31,7 +31,7 @@ public class FourWheelerManufacturer {
         Button searchButton = new Button("Search");
 
 
-        Image fordimg = new Image("assets\\image\\ford logo.png");
+        Image fordimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView fordImageView = new ImageView(fordimg);
         fordImageView.setFitWidth(250);
         fordImageView.setFitHeight(150);
@@ -46,7 +46,7 @@ public class FourWheelerManufacturer {
         fordButton.setGraphicTextGap(10);
 
 
-        Image toyotaimg = new Image("assets\\image\\Toyota logo.png");
+        Image toyotaimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView toyotaImageView = new ImageView(toyotaimg);
         toyotaImageView.setFitWidth(250);
         toyotaImageView.setFitHeight(150);
@@ -60,7 +60,7 @@ public class FourWheelerManufacturer {
 
 
 
-        Image hondaimg = new Image("assets\\image\\Honda.png");
+        Image hondaimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView hondaImageView = new ImageView(hondaimg);
         hondaImageView.setFitWidth(250);
         hondaImageView.setFitHeight(150);
@@ -77,7 +77,7 @@ public class FourWheelerManufacturer {
         hBox.setStyle("-fx-alignment: center;");
 
 
-        Image bmwimg = new Image("assets\\image\\BMW logo.png");
+        Image bmwimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView bmwImageView = new ImageView(bmwimg);
         bmwImageView.setFitWidth(250);
         bmwImageView.setFitHeight(150);
@@ -90,7 +90,7 @@ public class FourWheelerManufacturer {
         bmwButton.setGraphicTextGap(10);
 
 
-        Image chevroletimg = new Image("assets\\image\\chevrolet logo.png");
+        Image chevroletimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView chevroletImageView = new ImageView(chevroletimg);
         chevroletImageView.setFitWidth(250);
         chevroletImageView.setFitHeight(150);
@@ -102,7 +102,7 @@ public class FourWheelerManufacturer {
         chevroletButton.setContentDisplay(ContentDisplay.TOP);
         chevroletButton.setGraphicTextGap(10);
 
-        Image mercedesimg = new Image("assets\\image\\mercedes.png");
+        Image mercedesimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView mercedesImageView = new ImageView(mercedesimg);
         mercedesImageView.setFitWidth(250);
         mercedesImageView.setFitHeight(150);
@@ -120,7 +120,7 @@ public class FourWheelerManufacturer {
         hBox1.setStyle("-fx-alignment: center;");
 
 
-        Image tataimg = new Image("assets\\image\\tata logo.png");
+        Image tataimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView tataImageView = new ImageView(tataimg);
         tataImageView.setFitWidth(250);
         tataImageView.setFitHeight(150);
@@ -133,7 +133,7 @@ public class FourWheelerManufacturer {
         tataButton.setGraphicTextGap(10);
 
 
-        Image mahindraimg = new Image("assets\\image\\mahindralogo.png");
+        Image mahindraimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView mahindraImageView = new ImageView(mahindraimg);
         mahindraImageView.setFitWidth(250);
         mahindraImageView.setFitHeight(150);
@@ -146,7 +146,7 @@ public class FourWheelerManufacturer {
         mahindraButton.setGraphicTextGap(10);
 
 
-        Image audiimg = new Image("assets\\image\\Audi logo.png");
+        Image audiimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView audiImageView = new ImageView(audiimg);
         audiImageView.setFitWidth(250);
         audiImageView.setFitHeight(150);

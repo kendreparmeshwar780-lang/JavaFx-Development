@@ -30,7 +30,7 @@ public class TwoWheelerManufacture {
 
 
         
-        Image heroimg = new Image("assets\\TwoWheeler loga\\Hero.png");
+        Image heroimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView heroImageView = new ImageView(heroimg);
         heroImageView.setFitWidth(250);
         heroImageView.setFitHeight(150);
@@ -45,7 +45,7 @@ public class TwoWheelerManufacture {
         heroButton.setGraphicTextGap(10);
 
 
-        Image hondaimg = new Image("assets\\TwoWheeler loga\\Honda.png");
+        Image hondaimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView hondaImageView = new ImageView(hondaimg);
         hondaImageView.setFitWidth(250);
         hondaImageView.setFitHeight(150);
@@ -57,7 +57,7 @@ public class TwoWheelerManufacture {
         hondaButton.setContentDisplay(ContentDisplay.TOP);
         hondaButton.setGraphicTextGap(10);
 
-        Image ktmimg = new Image("assets\\TwoWheeler loga\\KTM.png");
+        Image ktmimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView ktmImageView = new ImageView(ktmimg);
         ktmImageView.setFitWidth(250);
         ktmImageView.setFitHeight(150);
@@ -74,7 +74,7 @@ public class TwoWheelerManufacture {
         hBox.setStyle("-fx-alignment: center;");
 
 
-       Image bajajimg = new Image("assets\\TwoWheeler loga\\bajaj.png");
+       Image bajajimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView bajajImageView = new ImageView(bajajimg);
         bajajImageView.setFitWidth(250);
         bajajImageView.setFitHeight(150);
@@ -87,7 +87,7 @@ public class TwoWheelerManufacture {
         bajajButton.setGraphicTextGap(10);
 
 
-        Image kawasakiimg = new Image("assets\\TwoWheeler loga\\kawasaki.png");
+        Image kawasakiimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView kawasakiImageView = new ImageView(kawasakiimg);
         kawasakiImageView.setFitWidth(250);
         kawasakiImageView.setFitHeight(150);
@@ -99,7 +99,7 @@ public class TwoWheelerManufacture {
         kawasakiButton.setContentDisplay(ContentDisplay.TOP);
         kawasakiButton.setGraphicTextGap(10);
 
-        Image vespaimg = new Image("assets\\TwoWheeler loga\\vespa.png");
+        Image vespaimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView vespaImageView = new ImageView(vespaimg);
         vespaImageView.setFitWidth(250);
         vespaImageView.setFitHeight(150);
@@ -117,7 +117,7 @@ public class TwoWheelerManufacture {
         hBox1.setStyle("-fx-alignment: center;");
 
 
-        Image suzukiimg = new Image("assets\\TwoWheeler loga\\suzuki.png");
+        Image suzukiimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView suzukiImageView = new ImageView(suzukiimg);
         suzukiImageView.setFitWidth(250);
         suzukiImageView.setFitHeight(150);
@@ -130,7 +130,7 @@ public class TwoWheelerManufacture {
         suzukiButton.setGraphicTextGap(10);
 
 
-        Image tvsimg = new Image("assets\\TwoWheeler loga\\tvs.png");
+        Image tvsimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView tvsImageView = new ImageView(tvsimg);
         tvsImageView.setFitWidth(250);
         tvsImageView.setFitHeight(150);
@@ -143,7 +143,7 @@ public class TwoWheelerManufacture {
         tvsButton   .setGraphicTextGap(10);
 
 
-        Image royalimg = new Image("assets\\TwoWheeler loga\\royal enfield.png");
+        Image royalimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
         ImageView royalImageView = new ImageView(royalimg);
         royalImageView.setFitWidth(250);
         royalImageView.setFitHeight(150);

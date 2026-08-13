@@ -1,6 +1,5 @@
 package com.core2web.view.user;
 
-import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -13,20 +12,20 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
+
 
 public class VehicleType {
-    private Scene vehicleTypeScene;
+     //private Scene vehicleTypeScene;
 
     
-        Scene getVehicleTypeScene() {
+        Scene getVehicleTypeScene(Runnable callBackAction) {
 
         BorderPane borderPane = new BorderPane();
         borderPane.setStyle("-fx-background-color:  ");
 
 
         ListView<String> listView = new ListView<>();
-        listView.getItems().addAll("Home", "Vehicle Type");
+        listView.getItems().addAll("Home", "Vehicle Type","Log Out");
         borderPane.setLeft(listView);
         listView.setStyle("-fx-text-fill: white; -fx-font-size: 16px; -fx-background-color: transparent;");
 
@@ -46,7 +45,7 @@ public class VehicleType {
 
 
 
-                Image twoWheelerimg = new Image("assets\\image\\twowheeler image.png");
+                Image twoWheelerimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
                 ImageView twoWheelerImageView = new ImageView(twoWheelerimg);
                 twoWheelerImageView.setFitWidth(300);
                 twoWheelerImageView.setFitHeight(300);
@@ -68,7 +67,7 @@ public class VehicleType {
                 });
 
 
-                Image fourWheelerimg = new Image("assets\\image\\four wheeler image.png");
+                Image fourWheelerimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
                 ImageView fourWheelerImageView = new ImageView(fourWheelerimg);
                 fourWheelerImageView.setFitWidth(300);
                 fourWheelerImageView.setFitHeight(300);
@@ -98,7 +97,7 @@ public class VehicleType {
 
 
 
-                Image truckWheelerimg = new Image("assets\\image\\ChatGPT Image Aug 9, 2026, 03_26_28 PM.png");
+                Image truckWheelerimg = new Image("assets//images//company icons//Two Wheeler icons//BMW logo.jpeg");
                 ImageView truckWheelerImageView = new ImageView(truckWheelerimg);
                 truckWheelerImageView.setFitWidth(300);
                 truckWheelerImageView.setFitHeight(300);
@@ -122,6 +121,8 @@ public class VehicleType {
                 borderPane.setCenter(vbox);
 
 
+                }else if(selected_item.equals("Log Out")){
+                    callBackAction.run();
                 }
 
 
