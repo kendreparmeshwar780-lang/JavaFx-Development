@@ -223,7 +223,12 @@ public class LoginPage extends Application {
         Button signButton = new Button("SIGN IN");
         signButton.setStyle(
                 "-fx-background-color: #f9260a;-fx-background-radius: 10px;-fx-padding :10px 30px;-fx-border-radius: 5px;-fx-alignment: center;");
+        
+                signButton.setOnAction(event->{
+                    AdminLogin adminLogin = new AdminLogin();
 
+                    loginPageStage.setScene(adminLogin.getAdminLogin());
+                });
         VBox vbox1 = new VBox(5, text1, textField1);
         VBox vbox2 = new VBox(5, text2, textField2);
 
